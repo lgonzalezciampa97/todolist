@@ -1,0 +1,125 @@
+body{
+	background-color:#D1D1D1;
+}
+
+.form{
+	display: flex;
+	margin: 0 auto;
+	justify-content: center;
+	align-content: center;
+}
+
+h3{
+	text-align: center;
+	text-transform: uppercase;
+	font-family: Arial Rounded MT;
+	background-color: #F36D4B;
+	padding: 10px;
+	margin: 0 auto;
+	justify-items: center;
+	margin-top: 15px;
+	width: 90%;
+}
+
+h2{
+	text-align: center;
+	text-transform: uppercase;
+	font-family: Arial Rounded MT;
+	background-color: #F36D4B;
+	margin: 0 auto;
+	justify-items: center;
+	margin-top: 40px;
+	width: 100%;
+}
+
+p{
+	font-size: 14px;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: Arial Rounded MT;
+	background-color: #F36D4B;
+	margin: 0 auto;
+	margin-top: 5px;
+	justify-items: center;
+	width: 90%;
+	color: red;
+}
+
+.form #todo-form{
+	display: flex;
+	padding: 10px;
+	width: 90%;
+	background-color: #EE4F33;
+	justify-content: center;
+}
+
+.form #todo-form #todo{
+	width: 80%;
+	background-color: #F9C2B9;
+	font-family: Arial Rounded MT;
+	font-size: 16px;
+	padding: 5px;
+	text-align: center;
+	border-style: none;
+}
+
+.form #todo-form #add{
+	margin-left: 10px;
+	padding: 5px;
+	background-color: #F9C2B9;
+	font-family: Arial Rounded MT;
+	text-transform: uppercase;
+	border-style: none;
+	cursor: pointer;
+}
+
+.listBox{
+	width: 90%;
+	margin: 0 auto;
+	box-shadow: 8px 8px 10px #080808;
+}
+
+.list{
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	background-color: #F5A092;
+	border-color: #97220D;
+	width: 100%;
+	margin-top: 0px;
+}
+
+.list #todo-list{
+	list-style-type: none;
+	font-size: 18px;
+	font-family: Arial Rounded MT;
+	transition: 0.5s;
+	text-transform: uppercase;
+	text-align: center;
+	width: 100%;
+}
+
+.list #todo-list li{
+	margin-right: 50px;
+	transition: 0.3s;
+}
+
+.list #todo-list li:hover{
+	cursor: pointer;
+	color: red;
+	background-color: wheat;
+}
+
+#footer{
+    color: black;
+    font-size: 12px;
+    font-family: Lucida Sans Typewriter;
+    text-align: center;
+    width: 100%;
+}
+
+#footer #footerText{
+	padding: 10px;
+	margin-top: 200px;
+	color: black;
+}
