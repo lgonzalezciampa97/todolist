@@ -1,15 +1,7 @@
 const toDos = [];
 
-window.onload = () => {
-	const form = document.getElementById('todo-form');
-	form.onsubmit = (e) => {
-		e.preventDefault();
-		const todo = document.getElementById('todo');
-		const todoText = todo.value;
-		todo.value = ""
-		toDos.push(todoText);
-		console.log(todoText)
-		const todoList = document.getElementById('todo-list')
+const render = () => {
+	const todoList = document.getElementById('todo-list')
 
 		//con uso de map y join
 		const toDosTemplate = toDos.map(t => '<li>' + t +'</li>')
@@ -21,6 +13,7 @@ window.onload = () => {
 			elemento.addEventListener('click',() =>{
 				elemento.parentNode.removeChild(elemento)
 				toDos.splice(i,1)
+				render()
 			})
 		})
 		//con uso de for
@@ -28,5 +21,17 @@ window.onload = () => {
 		// for(let i = 0 ; i < toDos.length ; i++){
 		// 	todoList.innerHTML += '<li>' + toDos[i] + '</li>';
 		// }
+	}
+
+	window.onload = () => {
+		const form = document.getElementById('todo-form');
+		form.onsubmit = (e) => {
+			e.preventDefault();
+			const todo = document.getElementById('todo');
+			const todoText = todo.value;
+			todo.value = ""
+			toDos.push(todoText);
+			render()
+		
 	}
 }
